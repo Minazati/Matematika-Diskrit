@@ -1,0 +1,26 @@
+#1. Metode Penulisan Fungsi Pada Python
+
+#Metode Konvensional
+
+for x in range (-4, 5):
+  fx = 3 * x - 7
+  print (f"f({x}) = {fx}")
+
+
+#Menggunakan def
+
+def f(x):
+  return 3 * x - 7
+
+for x in range (-4, 5):
+  result = f(x)
+  print (f"f({x}) = {f(x)}")
+
+
+#Menulis Anggota Domain Dengan List
+
+domain = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
+
+for x in domain:
+  fx = 3 * x - 7
+  print (f"f({x}) = {fx}")
