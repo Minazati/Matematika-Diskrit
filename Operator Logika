@@ -1,0 +1,39 @@
+#Latihan Operator Logika
+
+p = True
+q = False
+
+print("Negasi dari P:", not p)
+print("Konjungsi (P and Q):", p and q)
+print("Disjungsi (P or Q):", p or q)
+print("Eksklusif OR (P xor Q):, p ^ q")
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print("Gabungan (A ∪ B):", A | B)
+print("Irisan (A ∩ B):", A & B)
+print("Selisih (A - B):", A - B)
+print("Selisih (B - A):", B - A)
+
+
+#Ekspresi Logika 2 Variabel
+("P Q notP PandQ (PandQ)or notP")
+for P in(True, False):
+  for Q in(True, False):
+    notP = not P
+    PandQ = P and Q
+    result = (P and Q) or notP
+    print(P, Q, notP, PandQ, result)
+
+
+#Ekspresi Logika 3 Variabel
+("P Q R notP notPandQ (notPandQ)or R")
+for P in(True, False):
+  for Q in(True, False):
+    for R in(True, False):
+      notP = not P
+      notPandQ = notP and Q
+      result = notP and Q or notP
+      print(P, Q, R, notP, notPandQ, result)
