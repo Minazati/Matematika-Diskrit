@@ -24,3 +24,102 @@ domain = [-4, -3, -2, -1, 0, 1, 2, 3, 4]
 for x in domain:
   fx = 3 * x - 7
   print (f"f({x}) = {fx}")
+
+
+
+#2. Mendefinisikan fungsi dan menggambarkan grafik fungsi dengan kasus fungsi
+
+#a
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-100, 100)
+y = 2 * x
+
+plt.figure (figsize = (8, 6))
+plt.plot (x, y, label = 'f(x) = 2x', color = 'pink')
+plt.title ('Grafik f(x) = 2x')
+plt.xlabel ('x')
+plt.ylabel ('f(x)')
+plt.grid (True)
+plt.legend ()
+plt.axhline (0, color = 'black', linewidth = 0.5)
+plt.axvline (0, color = 'black', linewidth = 0.5)
+plt.show ()
+
+
+#b
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-20, 20)
+y= x**2 + 3 * x - 10
+plt.figure (figsize = (8, 6))
+plt.plot (x, y, label = 'f(x) = x^2 + 3x - 10', color = 'maroon')
+plt.title ('Grafik f(x) = x^2 + 3x - 10')
+plt.xlabel ('x')
+plt.ylabel ('f(x)')
+plt.grid (True)
+plt.legend ()
+plt.axhline (0, color = 'black', linewidth = 0.5)
+plt.axvline (0, color = 'black', linewidth = 0.5)
+plt.show ()
+
+
+#c
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-10, 10)
+y = x**3 - 10
+plt.figure (figsize = (8, 6))
+plt.plot (x, y, label = 'f(x) = x^3 - 10', color = 'red')
+plt.title ('Grafik f(x) = x^3 - 10')
+plt.xlabel ('x')
+plt.ylabel ('f(x)')
+plt.grid (True)
+plt.legend ()
+plt.axhline (0, color = 'black', linewidth = 0.5)
+plt.axvline (0, color = 'black', linewidth = 0.5)
+plt.show ()
+
+
+#d
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2*np.pi, 2*np.pi)
+y = np.sin(x)
+plt.figure (figsize = (8, 6))
+plt.plot (x, y, label = 'f(x) = sin(x)', color = 'purple')
+plt.title('Grafik f(x) = sin(x)')
+plt.xlabel ('x')
+plt.ylabel ('f(x)')
+plt.grid (True)
+plt.legend ()
+plt.axhline (0, color = 'black', linewidth = 0.5)
+plt.axvline (0, color = 'black', linewidth = 0.5)
+plt.show ()
+
+
+#e
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.linspace(-2*np.pi, 2*np.pi)
+y = np.cos (x)
+plt.figure (figsize = (8, 6))
+plt.plot (x, y, label = 'f(x) = cos(x)', color = 'navy')
+plt.title ('Grafik f(x) = cos(x)')
+plt.xlabel ('x')
+plt.ylabel ('f(x)')
+plt.grid (True)
+plt.legend ()
+plt.axhline (0, color = 'black', linewidth = 0.5)
+plt.axvline (0, color = 'black', linewidth = 0.5)
+plt.show ()
